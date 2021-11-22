@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZLo-Qz-P5g">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="5GV-pJ-OYT">
+            <objects>
+                <tabBarController id="ZLo-Qz-P5g" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Qe0-1T-cY1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="KIu-nC-ZZl" kind="relationship" relationship="viewControllers" id="Ob0-l5-NYY"/>
+                        <segue destination="7S3-yo-ONK" kind="relationship" relationship="viewControllers" id="flg-Nq-vkt"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wn3-9T-mqF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1819" y="-215"/>
+        </scene>
+        <!--Top Stories-->
+        <scene sceneID="l3v-SS-nhr">
+            <objects>
+                <navigationController id="KIu-nC-ZZl" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Top Stories" image="newspaper" catalog="system" id="Zng-4x-kWy"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ej9-60-VWr">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="tU9-6q-5FL" kind="relationship" relationship="rootViewController" id="buT-nK-zvv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FA0-Zi-JNh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2443" y="467"/>
+        </scene>
+        <!--Top News View Controller-->
+        <scene sceneID="BUd-5W-3qq">
+            <objects>
+                <viewController id="tU9-6q-5FL" customClass="TopNewsViewController" customModule="Newyorktimes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4T5-mC-vLX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="DmE-65-DB3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="BWJ-88-qKh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bHB-ni-FjY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2443" y="1184"/>
+        </scene>
+        <!--BookMarks-->
+        <scene sceneID="CUv-Oe-PpP">
+            <objects>
+                <navigationController id="7S3-yo-ONK" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="BookMarks" image="bookmark" catalog="system" id="7u6-jn-WQN"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fXj-R8-Zxi">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="v2e-y1-Zj4" kind="relationship" relationship="rootViewController" id="yFO-Xn-8Gl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zz3-vt-BjS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1270" y="467"/>
+        </scene>
+        <!--Book Marks View Controller-->
+        <scene sceneID="NaI-I9-Kfn">
+            <objects>
+                <viewController id="v2e-y1-Zj4" customClass="BookMarksViewController" customModule="Newyorktimes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4jU-l1-V1V">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="er9-FB-dY1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Wj5-Qa-gzR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YtN-Bx-5rA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1271" y="1184"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bookmark" catalog="system" width="112" height="128"/>
+        <image name="newspaper" catalog="system" width="128" height="108"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
